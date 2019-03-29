@@ -1,26 +1,28 @@
 name: mpl
 dependencies:
 
+- python=2.7
+
 # This course depends on a few of the new features and changes made to
 # matplotlib for the 1.5 release, so make sure to use 1.5 or greater.
-- matplotlib == 1.5.1
+- matplotlib == 2.2.3
 
 # We need version 4.1 or greater of IPython since it has my fix for displaying
 # emtpy figures in a jupyter notebook.
-- ipython    == 4.1.1
+- ipython == 5.8.0
 
 # Any version of these should work just fine, but I've marked the versions I
 # used in the course just to be sure everything works.
-- jupyter    == 1.0.0
-- numpy      == 1.10.4
-- basemap    == 1.0.7
-- xlrd       == 0.9.4
-- seaborn    == 0.7.0
-- bokeh      == 0.11.1
-- mpld3      == 0.2
+- jupyter == 1.0.0
+- numpy == 1.16.2
+- basemap == 1.2.0
+- xlrd == 1.2.0
+- seaborn == 0.9.0
+- bokeh == 1.0.4
+- mpld3 == 0.3
 
 # The plotly library isn't installable via conda as of this recording, so
 # install it through pip. Again, any version should be fine, but 1.9.5 was the
 # version I used in the course.
 - pip:
-    - plotly == 1.9.5
+    - plotly == 3.7.1
